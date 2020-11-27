@@ -3,8 +3,9 @@ name: Simple Startup
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '* * * * *'
+  pull_request:
+    branches: [main]
+    
     
 jobs:
   my-job:
@@ -14,3 +15,4 @@ jobs:
     - name: Print a greeting
       run: |
         echo Hello there!
+        echo $(git log -1 --pretty=%B)

@@ -7,4 +7,5 @@ func main() {
 
 	fmt.Println("Hello I am your new collaborator")
 	fmt.Println("Test CICD / trigger from github actions")
+	fmt.Println("trigger Ben workflow")
 }

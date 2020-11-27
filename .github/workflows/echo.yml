@@ -14,5 +14,6 @@ jobs:
     steps:
     - name: Print a greeting
       run: |
-        echo Hello there!
         echo $(git log -1 --pretty=%B)
+        echo Hello there!
+        
